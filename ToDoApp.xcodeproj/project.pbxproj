@@ -15,6 +15,8 @@
 		DAC28213248453E100B634A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAC28212248453E100B634A6 /* Assets.xcassets */; };
 		DAC28216248453E100B634A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAC28214248453E100B634A6 /* LaunchScreen.storyboard */; };
 		DAC28221248453E100B634A6 /* ToDoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC28220248453E100B634A6 /* ToDoAppTests.swift */; };
+		DAC2822C2484592500B634A6 /* ToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2822B2484592500B634A6 /* ToDoTableViewController.swift */; };
+		DAC2822E2484595600B634A6 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2822D2484595600B634A6 /* ToDo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		DAC2821C248453E100B634A6 /* ToDoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAC28220248453E100B634A6 /* ToDoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoAppTests.swift; sourceTree = "<group>"; };
 		DAC28222248453E100B634A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAC2822B2484592500B634A6 /* ToDoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewController.swift; sourceTree = "<group>"; };
+		DAC2822D2484595600B634A6 /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,8 @@
 			isa = PBXGroup;
 			children = (
 				DAC28206248453DC00B634A6 /* AppDelegate.swift */,
+				DAC2822D2484595600B634A6 /* ToDo.swift */,
+				DAC2822B2484592500B634A6 /* ToDoTableViewController.swift */,
 				DAC28208248453DC00B634A6 /* SceneDelegate.swift */,
 				DAC2820A248453DC00B634A6 /* ViewController.swift */,
 				DAC2820C248453DC00B634A6 /* Main.storyboard */,
@@ -206,7 +212,9 @@
 				DAC2820B248453DC00B634A6 /* ViewController.swift in Sources */,
 				DAC28207248453DC00B634A6 /* AppDelegate.swift in Sources */,
 				DAC28209248453DC00B634A6 /* SceneDelegate.swift in Sources */,
+				DAC2822E2484595600B634A6 /* ToDo.swift in Sources */,
 				DAC28211248453DC00B634A6 /* ToDoApp.xcdatamodeld in Sources */,
+				DAC2822C2484592500B634A6 /* ToDoTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
