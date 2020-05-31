@@ -17,6 +17,8 @@
 		DAC28221248453E100B634A6 /* ToDoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC28220248453E100B634A6 /* ToDoAppTests.swift */; };
 		DAC2822C2484592500B634A6 /* ToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2822B2484592500B634A6 /* ToDoTableViewController.swift */; };
 		DAC2822E2484595600B634A6 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2822D2484595600B634A6 /* ToDo.swift */; };
+		DAC282302484614500B634A6 /* AddToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2822F2484614500B634A6 /* AddToDoViewController.swift */; };
+		DAC282322484655100B634A6 /* CompleteToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC282312484655100B634A6 /* CompleteToDoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		DAC28222248453E100B634A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAC2822B2484592500B634A6 /* ToDoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewController.swift; sourceTree = "<group>"; };
 		DAC2822D2484595600B634A6 /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
+		DAC2822F2484614500B634A6 /* AddToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToDoViewController.swift; sourceTree = "<group>"; };
+		DAC282312484655100B634A6 /* CompleteToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteToDoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +91,9 @@
 			children = (
 				DAC28206248453DC00B634A6 /* AppDelegate.swift */,
 				DAC2822D2484595600B634A6 /* ToDo.swift */,
+				DAC2822F2484614500B634A6 /* AddToDoViewController.swift */,
 				DAC2822B2484592500B634A6 /* ToDoTableViewController.swift */,
+				DAC282312484655100B634A6 /* CompleteToDoViewController.swift */,
 				DAC28208248453DC00B634A6 /* SceneDelegate.swift */,
 				DAC2820A248453DC00B634A6 /* ViewController.swift */,
 				DAC2820C248453DC00B634A6 /* Main.storyboard */,
@@ -211,8 +217,10 @@
 			files = (
 				DAC2820B248453DC00B634A6 /* ViewController.swift in Sources */,
 				DAC28207248453DC00B634A6 /* AppDelegate.swift in Sources */,
+				DAC282322484655100B634A6 /* CompleteToDoViewController.swift in Sources */,
 				DAC28209248453DC00B634A6 /* SceneDelegate.swift in Sources */,
 				DAC2822E2484595600B634A6 /* ToDo.swift in Sources */,
+				DAC282302484614500B634A6 /* AddToDoViewController.swift in Sources */,
 				DAC28211248453DC00B634A6 /* ToDoApp.xcdatamodeld in Sources */,
 				DAC2822C2484592500B634A6 /* ToDoTableViewController.swift in Sources */,
 			);
