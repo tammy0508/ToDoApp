@@ -9,25 +9,25 @@
 import UIKit
 
 class ToDoTableViewController: UITableViewController {
+
+    var toDos : [ToDoCD] = []
     
-    func createToDo() -> [ToDo] {
-        let swift = ToDo()
-        swift.name = "Learn Swift"
-        swift.important = true
-        
-        let dog = ToDo()
-        dog.name = "Walk the Dog"
-        
-        return [swift, dog]
+    func getToDo () {
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+
+          if let coreDataToDos = try?context.fetch(ToDoCD.fetchRequest()) as? [ToDoCD] {
+                  toDos = coreDataToDos
+                  tableView.reloadData()
+          }
+        }
     }
     
-    var toDos : [ToDo] = []
+    override func viewWillAppear(_ animated: Bool) {
+      getToDo()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        toDos = createToDo()
-       
     }
 
     // MARK: - Table view data source
@@ -50,10 +50,12 @@ class ToDoTableViewController: UITableViewController {
         let toDo = toDos [indexPath.row]
         // change the textLabel of the cell to the value of the toDo.name
         
-        if toDo.important {
-            cell.textLabel?.text = "👉" + toDo.name
-        } else {
+        if let name = toDo.name {
+            if toDo.important {
+               cell.textLabel?.text = "👉" + toDo.name
+            } else {
            cell.textLabel?.text = toDo.name
+        }
         }
         
         return cell
@@ -71,7 +73,7 @@ class ToDoTableViewController: UITableViewController {
         }
         
         if let completeVC = segue.destination as? CompleteToDoViewController {
-          if let toDo = sender as? ToDo {
+          if let toDo = sender as? ToDoCD {
             completeVC.selectedToDo = toDo
             completeVC.previousVC = self
           }
